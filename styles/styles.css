@@ -81,7 +81,7 @@ body {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #252424; /* white background */
+    background-color: #242525; /* white background */
     border: 1px solid #ddd; /* light gray border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
     border: none;
@@ -92,7 +92,15 @@ body {
     margin-bottom: 10px;
   }
   
-  p {
-    color: #333; /* dark gray text */
-    margin-bottom: 20px;
+  .class-subtitulo {
+
+    text-align: center;
+    color: #fbf6f6; /* dark gray text */
+    margin-bottom: 10px;
+  }
+  
+  .titulo {
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px;
   }
