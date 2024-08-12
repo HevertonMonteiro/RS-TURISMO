@@ -1,99 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./script/index.js" defer></script>
     <title>Microonibus Executivo</title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* light gray background */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-bar {
-    background-color: #333; /* dark gray/black */
-    color: #fff; /* white text */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #2196F3; /* blue border */
-  }
-  
-  .nav-bar .nav-item {
-    margin-right: 20px;
-  }
-  
-  .nav-bar .nav-item:last-child {
-    margin-right: 0;
-  }
-  
-  .nav-bar .nav-link {
-    color: #fff; /* white text */
-    text-decoration: none;
-  }
-  
-  .nav-bar .nav-link:hover {
-    color: #ccc; /* light gray text on hover */
-  }
-  
-  .dialog-box {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: #fff; /* white background */
-    padding: 10px;
-    border: 1px solid #ddd; /* light gray border */
-    display: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
-  }
-  
-  .dialog-box.show {
-    display: block;
-  }
-  
-  .image-space {
-    width: 100%;
-    height: 200px;
-    background-color: #FFC080; /* warm orange/red background */
-    margin-bottom: 20px;
-    border-radius: 10px; /* rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
-  }
-  
-  .button {
-    background-color: #2196F3; /* blue background */
-    color: #fff; /* white text */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #1976D2; /* darker blue on hover */
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
-  }
-  
-  h1 {
-    color: #FF3737; /* bright red text */
-    margin-bottom: 10px;
-  }
-  
-  p {
-    color: #333; /* dark gray text */
-    margin-bottom: 20px;
-  }
+       
     </style>
 </head>
 <body>
@@ -114,23 +28,60 @@
             </div>
         </div>
     </div>
+    <header>
+    <div class="inputs">
+      <h2>Reserva de Viagem</h2>
+      <form>
+        <input name="name" autocomplete="off" required />
+        <label for="name">
+          <span>NOME E SOBRENOME</span>
+        </label>
+      </form>
+      <form>
+        <input name="name" autocomplete="off" required />
+        <label for="name">
+          <span>E-MAIL</span>
+        </label>
+      </form>
+      <form>
+        <input name="name" autocomplete="off" required />
+        <label for="name">
+          <span>TELEFONE</span>
+        </label>
+      </form>
+      <form>
+        <input name="name" autocomplete="off" required />
+        <label for="name">
+          <span>LOCAL DE SAIDA</span>
+        </label>
+      </form>
+      <form>
+        <input name="name" autocomplete="off" required />
+        <label for="name">
+          <span>DESTINO FINAL</span>
+        </label>
+      </form>
+      <form>
+        <input name="name" autocomplete="off" required />
+        <label for="name">
+          <span>DATA</span>
+        </label>
+      </form>
+
+
+    </div>
     <div class="container">
-        <h1>Microonibus Executivo</h1>
-        <p>BEM VINDO A RS TRANSPORTE E TURISMO LTDA!</p>
-        <div class="image-space"></div>
+        <h1 class="titulo">Microonibus Executivo</h1>
+        <p class="class-subtitulo">BEM VINDO A RS TRANSPORTE E TURISMO LTDA!</p>
+        <p class="class-subtitulo">Ser a escolha preferida para transporte executivo, proporcionando soluções de 
+            mobilidade premium, flexíveis e adaptáveis às necessidades específicas de cada cliente.</p>
+       <center><div class="botoes"> 
+        <img class="image-space" src="./media/obinus.jpeg" alt="" srcset="">
         <button class="button">Reserve uma Viagem</button>
         <button class="button">Verifique a Agenda</button>
         <button class="button">Contate-nos</button>
+      </div></center>
     </div>
-    <script>
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', event => {
-                event.preventDefault();
-                const dialogBox = link.nextElementSibling;
-                dialogBox.classList.toggle('show');
-            });
-        });
-    </script>
+  </header>
 </body>
 </html>
