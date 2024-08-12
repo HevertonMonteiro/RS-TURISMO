@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microonibus Executivo</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* light gray background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-bar {
+    background-color: #333; /* dark gray/black */
+    color: #fff; /* white text */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #2196F3; /* blue border */
+  }
+  
+  .nav-bar .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-bar .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-bar .nav-link {
+    color: #fff; /* white text */
+    text-decoration: none;
+  }
+  
+  .nav-bar .nav-link:hover {
+    color: #ccc; /* light gray text on hover */
+  }
+  
+  .dialog-box {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff; /* white background */
+    padding: 10px;
+    border: 1px solid #ddd; /* light gray border */
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  }
+  
+  .dialog-box.show {
+    display: block;
+  }
+  
+  .image-space {
+    width: 100%;
+    height: 200px;
+    background-color: #FFC080; /* warm orange/red background */
+    margin-bottom: 20px;
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  }
+  
+  .button {
+    background-color: #2196F3; /* blue background */
+    color: #fff; /* white text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #1976D2; /* darker blue on hover */
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff; /* white background */
+    border: 1px solid #ddd; /* light gray border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  }
+  
+  h1 {
+    color: #FF3737; /* bright red text */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #333; /* dark gray text */
+    margin-bottom: 20px;
+  }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+            <div class="dialog-box">
+                <p>Entre em contato conosco <a href="mailto:info@microbuscompany.com">regisfsantiago@gmail.com</a> ou pelo telefone (81)996452883.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Microonibus Executivo</h1>
+        <p>BEM VINDO A RS TRANSPORTE E TURISMO LTDA!</p>
+        <div class="image-space"></div>
+        <button class="button">Reserve uma Viagem</button>
+        <button class="button">Verifique a Agenda</button>
+        <button class="button">Contate-nos</button>
+    </div>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const dialogBox = link.nextElementSibling;
+                dialogBox.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
