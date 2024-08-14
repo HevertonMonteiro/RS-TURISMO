@@ -11,24 +11,23 @@
     </style>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-        </div>
-        <div class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
-        </div>
-        <div class="nav-item">
-            <a class="nav-link" href="#">Serviços</a>
-        </div>
-        <div class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
-            <div class="dialog-box">
-                <p>Entre em contato conosco <a href="mailto:info@microbuscompany.com">regisfsantiago@gmail.com</a> ou pelo telefone (81)996452883.</p>
-            </div>
-        </div>
-    </div>
-    <header>
+  <header>
+
+    <nav class="nav-bar">
+     
+        <a class="nav-link" href="#">Inicio</a>
+        <a class="nav-link" href="#">Sobre</a>
+        <a class="nav-link" href="#">Serviços</a>
+        <a class="nav-link" onclick="btnContato()" href="#">Contato</a>
+       
+      </div>
+    </nav>
+  </header>
+  <h4  class="ocult">Contato:
+  <p><a href="mailto:info@microbuscompany.com" onclick="btnOcultar()" target="_blank">Heverton@contato.com.br </a></p>
+  <a href="https://abrir.link/PICzZ" target="_blank">Whatsapp</a>
+  </h4>
+    <main>
     <div class="inputs">
       <h2>Reserva de Viagem</h2>
       <form>
@@ -82,6 +81,6 @@
         <button class="button">Contate-nos</button>
       </div></center>
     </div>
-  </header>
+  </main>
 </body>
 </html>

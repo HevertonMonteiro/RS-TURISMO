@@ -5,6 +5,16 @@ body {
     padding: 0;
     
   }
+
+
+.ocult{
+  display: none;
+}
+.show{
+display: block;
+
+}
+
   
   .nav-bar {
     background-color: #333; /* dark gray/black */
@@ -70,9 +80,9 @@ body {
     align-items: center;
   }
 
-  .botoes {
+  /* .botoes {
     
-  }
+  } */
   
   .button:hover {
     background-color: #1976D2; /* darker blue on hover */
@@ -177,9 +187,11 @@ input:valid + label::after {
   transform: translateX(0%);
 }
   
-header{
+main{
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
+
+
 
