@@ -35,7 +35,7 @@ body {
   
   .dialog-box {
     position: absolute;
-    top: 50px;
+    top: 10px;
     right: 0;
     background-color: #fff; /* white background */
     padding: 10px;
@@ -112,6 +112,13 @@ body {
     text-align: center;
     color: blue;
     margin-bottom: 10px;
+  }
+
+  .titulo-info {
+    border: 10px solid #4f4f4f;
+    padding: auto;
+    background-color: #4f4f4f;
+    text-align: center;
   }
 
   .inputs input{
