@@ -92,7 +92,6 @@ body {
     border: 1px solid #ddd; /* light gray border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
     border: none;
-    margin-top: 50px;
     border-radius: 10px;
   }
   
@@ -120,6 +119,11 @@ body {
     background-color: #4f4f4f;
     text-align: center;
   }
-.ocult .email .zap{
-  display: none;
+
+.dialog-box{
+  transform: translatey(50px);
+}
+
+.inputs{
+ transform: translateY(-22px);
 }
